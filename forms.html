@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML FORMS </title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+
+        
+    </head>
+    <body>
+        <!--This is some html form by wassim boussebha ; 17 years old ; i like CSS -->
+        
+          <center>
+            <img src="img.png" alt="logo"> <hr>
+
+        <em><strong>
+<h1>HTML FORM<br> BY WASSIM BOUSSEBHA<br>01/10/2020 </h1>
+<hr>
+
+        <!--Action is about what after click sumbit ( PHP stuffs) -->
+        <!--always add required to input (important add something)-->
+        <form action=""> 
+            <label for="username">USERNAME : </label>
+            <input type="text" id="username" name="username" required>  
+            
+<br><br>
+            <label for="email">E-MAIL : </label>
+            <input type="email" id="email" name="email" required>
+
+<br><br>
+            <label for="password" >PASSWORD :</label>
+            <input type="password"  id="password" name="password" required>
+        <!--the name="" attribute is used for server processing -->
+        <!--  PHP file on the server use the name attribute to 
+         get the value from this input "password"    -->
+<br><br>
+
+<p>Select your age : </p>
+<!--radio attribute need name ( age ) to regroup them-->
+<!--name for == لكي تختار واحدة من radio -->
+<input type="radio" name="age" value="0-25" id="option-1" required>
+<label for="option-1">0-25</label> <!-- for the id="option-1" مخصص لها-->
+<input type="radio" name="age" value="25-50" id="option-2" required>
+<label for="option-2">25-50</label>
+
+<br><br>
+        <label for="question"></label>
+        <select name="question" id="question">
+            <option value="q1">WHAT'S YOUR FIRST TOY</option>
+            <option value="q2">WHAT IS YOUR SUR-NAME</option>
+        </select>
+
+
+        <br><br>
+    <label for="answer">The answer is : </label>
+    <input type="text" name="answer" id="answer" required>
+    <br><br>
+    <label for="bio">Enter your BIO </label><br>
+    <textarea name="bio" id="bio" cols="120" rows="10" placeholder="enter your bio.." required>  </textarea>
+
+        <br><br>
+        
+    <input type="submit" value="SUBMIT" name="submit" id="submit"><br>
+    <input type="reset" value="RESET"> <!-- for reset -->
+
+    <!--For other HTML input types : visit W3SCHOOLS and type the title -->
+    <!-- for remember id attribute is used to link label with input-->
+    <!--name attribute is used for keeping the same radio list-->
+
+
+
+
+
+
+
+
+      </form>
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </strong>
+</em>
+        </center>
+
+    </body>
+
+</html>
