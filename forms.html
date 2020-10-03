@@ -1,98 +1,98 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>HTML FORMS </title>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
 
-        
-    </head>
-    <body>
-        <!--This is some html form by wassim boussebha ; 17 years old ; i like CSS -->
-        
-          <center>
-            <img src="img.png" alt="logo"> <hr>
-
-        <em><strong>
-<h1>HTML FORM<br> BY WASSIM BOUSSEBHA<br>01/10/2020 </h1>
-<hr>
-
-        <!--Action is about what after click sumbit ( PHP stuffs) -->
-        <!--always add required to input (important add something)-->
-        <form action=""> 
-            <label for="username">USERNAME : </label>
-            <input type="text" id="username" name="username" required>  
-            
-<br><br>
-            <label for="email">E-MAIL : </label>
-            <input type="email" id="email" name="email" required>
-
-<br><br>
-            <label for="password" >PASSWORD :</label>
-            <input type="password"  id="password" name="password" required>
-        <!--the name="" attribute is used for server processing -->
-        <!--  PHP file on the server use the name attribute to 
-         get the value from this input "password"    -->
-<br><br>
-
-<p>Select your age : </p>
-<!--radio attribute need name ( age ) to regroup them-->
-<!--name for == لكي تختار واحدة من radio -->
-<input type="radio" name="age" value="0-25" id="option-1" required>
-<label for="option-1">0-25</label> <!-- for the id="option-1" مخصص لها-->
-<input type="radio" name="age" value="25-50" id="option-2" required>
-<label for="option-2">25-50</label>
-
-<br><br>
-        <label for="question"></label>
-        <select name="question" id="question">
-            <option value="q1">WHAT'S YOUR FIRST TOY</option>
-            <option value="q2">WHAT IS YOUR SUR-NAME</option>
-        </select>
+<head>
+    <title>HTML FORMS </title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
 
-        <br><br>
-    <label for="answer">The answer is : </label>
-    <input type="text" name="answer" id="answer" required>
-    <br><br>
-    <label for="bio">Enter your BIO </label><br>
-    <textarea name="bio" id="bio" cols="120" rows="10" placeholder="enter your bio.." required>  </textarea>
+</head>
 
-        <br><br>
-        
-    <input type="submit" value="SUBMIT" name="submit" id="submit"><br>
-    <input type="reset" value="RESET"> <!-- for reset -->
+<body>
+    <!--This is some html form by wassim boussebha ; 17 years old ; i like CSS -->
 
-    <!--For other HTML input types : visit W3SCHOOLS and type the title -->
-    <!-- for remember id attribute is used to link label with input-->
-    <!--name attribute is used for keeping the same radio list-->
+    <img src="img.png" alt="logo">
+    <hr>
 
+    <em><strong>
+            <h1>HTML FORM</h1> 
+            <h1> BY WASSIM BOUSSEBHA</h1>
+            <h1> 01/10/2020 </h1>
 
+            <!--Action is about what after click sumbit ( PHP stuffs) -->
+            <!--always add required to input (important add something)-->
+            <form action="">
+                <div>
+                    <label for="username">USERNAME : </label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                
+                <div>
+                    <label for="email">E-MAIL : </label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
+                <div>
+                    <label for="password">PASSWORD :</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <!--the name="" attribute is used for server processing -->
+                <!--  PHP file on the server use the name attribute to 
+                get the value from this input "password"    -->
 
+                <div class="age">
+                    <div class="age-radio-btn">
+                        <p>Select your age : </p>
+                        <!--radio attribute need name ( age ) to regroup them-->
+                        <!--name for == لكي تختار واحدة من radio -->
+                        <div>
+                            <input class="options" type="radio" name="age" value="0-25" id="option-1" required>
+                            <label for="option-1">0-25</label> <!-- for the id="option-1" مخصص لها-->
+                        </div>
+                        <div>
+                            <input class="options" type="radio" name="age" value="25-50" id="option-2" required>
+                            <label for="option-2">25-50</label>
+                        </div>
+                    </div>
+                    <div class="age-radio-btn">
+                        <p>Select your age : </p>
+                        <!-- we will add a function that generate years between 1990 and 2020 -->
+                        <select id="year"></select>
+    
+                    </div>
+                </div>
 
+                <div>
+                    <label for="question">Chose a Security Question</label>
+                    <select name="question" id="question">
+                        <option value="q1">WHAT'S YOUR FIRST TOY ?</option>
+                        <option value="q2">WHAT IS YOUR SUR-NAME ?</option>
+                    </select>
+                </div>
 
+                <div>
+                    <label for="answer">The answer is : </label>
+                    <input type="text" name="answer" id="answer" required>
+                </div>
 
+                <div class="textarea-fields">
+                    <label for="bio">Enter your BIO </label>
+                    <textarea name="bio" id="bio" cols="120" rows="10" placeholder="enter your bio.." required></textarea>
+                </div>
+                <div class="btn-container">
+                    <input class="btn" type="submit" value="SUBMIT" name="submit" id="submit">
+                    <input class="btn" type="reset" value="RESET"> <!-- for reset -->
+                </div>
 
-      </form>
-      
-      
+                <!--For other HTML input types : visit W3SCHOOLS and type the title -->
+                <!-- for remember id attribute is used to link label with input-->
+                <!--name attribute is used for keeping the same radio list-->
+            </form>
 
+        </strong>
+    </em>
 
-
-
-
-
-
-
-
-
-
-
-
-    </strong>
-</em>
-        </center>
-
-    </body>
+    <script src="script.js"></script>
+</body>
 
 </html>
